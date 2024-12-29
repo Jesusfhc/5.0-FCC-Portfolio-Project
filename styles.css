@@ -17,7 +17,7 @@ body * {
 }
 
 navbar {
-  background-color: var(--color4);
+  background-color:#001F3F;
   height: 60px;
   max-height: 60px;
   width: 100vw;
@@ -146,7 +146,7 @@ span.space {
   height: 350px;
   width: 100%;
   background-color: var(--color3);
-  padding: 0 8% 0 8%;
+  padding: 0 8% 30px 8%;
 }
 
 .tools-container {
@@ -179,12 +179,18 @@ span.space {
   background-color: var(--color4);
   height: fit-content;
   width: 100%;
-  padding: 0 8% 30px 8%;
+  padding: 0 8% 60px 8%;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
 }
 
 .project-container {
   height: 400px;
-  width: 40%;
+  width: 100%;
   margin-left: 1%;
   margin-right: 1%;
   background-color: rgb(12, 12, 75);
@@ -194,6 +200,7 @@ span.space {
 .project-img {
   height: 80%;
   width: 100%;
+  object-fit: cover;
 }
 
 .project-h {
@@ -214,6 +221,126 @@ span.space {
 .project-container a:hover {
   border: 1px solid white;
   padding: 8px;
+}
+
+.contact-section {
+  background-color: var(--color3);
+  width: 100%;
+  height: fit-content;
+  padding: 0 8% 30px 8%;
+}
+
+.contact-title {
+  font-size: 2.5em;
+  color: azure;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 5%;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: 1.5em;
+  color: azure;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-title {
+  color:rgb(6, 7, 7);
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.separator {
+  height: 3px;
+  width: 60%;
+  margin: 5px auto;
+  background-color: #194a7a;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-icon {
+  height: 70px;;
+}
+
+form {
+  background-color: rgba(0, 31, 63, 0.5);
+  width: 60vw;
+  max-width: 650px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 2em;
+  border-radius: 2%;
+  border: 1px solid black;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #6A9AB0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+legend {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+input,
+textarea {
+  margin: 10px 0 0 0;
+  width: 95%;
+  min-height: 3em;
+  border-radius: 2%;
+}
+
+input, textarea {
+  background-color: #001F3F;
+  border: 1px solid #001F3F;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #194a7a;
+  border-color: white;
+  min-width: 300px;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #001F3F;
+
 }
 
 
